@@ -48,7 +48,6 @@ function App() {
       currWord += board[currAttempt.attempt][i];
     }
     const search=currWord.toLowerCase();
-    console.log(correctWord);
     
     if(wordSet.has(search+"\r")){
       setCurrAttempt({attempt:currAttempt.attempt + 1,letterPos:0});
